@@ -1,0 +1,26 @@
+/* Bring the login card inward and add restrained luxury details to the full-page brand backdrop. */
+.login-panel{padding-right:clamp(110px,13vw,210px)}
+.login-panel:before{content:"";position:absolute;z-index:0;pointer-events:none;right:calc(clamp(110px,13vw,210px) - 40px);top:calc(50% - 245px);width:490px;height:490px;border:1px solid #b8892827;border-radius:50%;box-shadow:inset 0 0 0 18px #d2a13708,0 0 0 28px #d2a13709}
+.login-panel:after{content:"";position:absolute;z-index:0;pointer-events:none;right:24px;top:calc(50% - 280px);width:150px;height:110px;opacity:.6;background-image:radial-gradient(#ad7b2638 1px,transparent 1.5px);background-size:15px 15px;mask-image:radial-gradient(ellipse at 75% 35%,#000 0 28%,transparent 77%)}
+.login-top,.login-card,.login-footer{position:relative;z-index:1}
+.login-card{border-color:#e6dcc4;box-shadow:0 24px 68px #142b431c,0 3px 9px #142b4308}
+.login-heading .welcome-tag{display:inline-flex;align-items:center;gap:7px}
+.login-heading .welcome-tag:before{content:"";width:17px;height:1px;background:#c39a3e}
+.input-wrap{background:linear-gradient(115deg,#fffefa,#fff);box-shadow:0 2px 6px #192c3c06}
+.sign-in-button{letter-spacing:.35px}
+.demo-hint{border-left:2px solid #c69a35}
+.brand-full-logo{filter:drop-shadow(0 8px 14px #a7791810)}
+@media(min-width:801px) and (max-width:1100px){
+  .login-panel{padding-right:clamp(82px,10vw,112px)}
+  .login-panel:before{right:calc(clamp(82px,10vw,112px) - 32px);width:420px;height:420px;top:calc(50% - 210px)}
+  .login-panel:after{right:9px}
+  .login-card,.login-top,.login-footer{width:min(100%,360px)}
+  .art-copy{max-width:320px}
+  .art-copy h1{font-size:42px}
+}
+@media(max-width:800px){
+  .login-panel{padding:104px 18px 65px}
+  .login-panel:before{width:min(94vw,430px);height:min(94vw,430px);right:50%;transform:translateX(50%);top:calc(50% - 215px)}
+  .login-panel:after{display:none}
+}
+@media(max-width:420px){.login-panel{padding-left:15px;padding-right:15px}}

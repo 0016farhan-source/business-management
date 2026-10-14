@@ -1,0 +1,61 @@
+/* Professional split login: logo on ivory, gold accents and a spacious white form. */
+.login-view{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(330px,.88fr) minmax(480px,1.12fr);min-height:100svh;overflow:hidden;background:#fffdfa}
+.login-view:before{content:"";position:absolute;inset:0 55% 0 0;z-index:-2;background:radial-gradient(ellipse at 5% 88%,#c995331c,transparent 45%),linear-gradient(150deg,#fbfaf6 0%,#f8f6ef 54%,#f4f0e6 100%)}
+.login-view:after{content:"";position:absolute;z-index:-1;left:0;top:0;width:44%;height:100%;pointer-events:none;background:radial-gradient(ellipse at 100% 15%,#e1b34218,transparent 44%),linear-gradient(135deg,transparent 75%,#d7a94112 75.2%,transparent 75.6%)}
+.login-art{position:relative;z-index:1;min-height:100svh;padding:36px clamp(28px,5vw,70px);display:flex;flex-direction:column;justify-content:space-between;background:transparent;border:0;overflow:hidden}
+.login-art:before,.login-art:after{position:absolute;content:"";border:1px solid #e2ba5730;border-radius:50%;pointer-events:none}
+.login-art:before{width:560px;height:560px;right:-365px;top:calc(50% - 280px);border-color:#c28c2630}
+.login-art:after{width:390px;height:390px;right:-280px;top:calc(50% - 195px);border-color:#c28c2620}
+.art-glow{position:absolute;width:430px;height:430px;left:-200px;bottom:-180px;background:radial-gradient(circle,#d9a63218,transparent 68%)}
+.brand-full-logo{position:relative;z-index:2;display:block;width:min(100%,260px);margin:0;background:transparent;border-radius:0;box-shadow:none;overflow:visible}
+.brand-full-logo img{display:block;width:100%;height:auto}
+.art-copy{z-index:1;position:relative;margin:0 0 5vh 4px}
+.eyebrow{color:#9c7019;font-size:9px;letter-spacing:1.8px}
+.eyebrow i{background:#bd8b29;box-shadow:0 0 12px #bd8b2950}
+.art-copy h1{color:#142b43;font-size:clamp(38px,4.4vw,58px);letter-spacing:-2.2px;line-height:1.12;margin:20px 0 13px}
+.art-copy h1 em{color:#b88116;font-style:normal}
+.art-copy p{max-width:310px;color:#687889;font-size:13px;line-height:1.85}
+.art-bottom{position:relative;z-index:1;color:#78828a;font-size:8px;letter-spacing:1.1px;gap:9px}
+.art-bottom span:nth-child(even){color:#bd8b29}
+.art-orbit{display:none}
+.login-panel{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;padding:29px clamp(28px,7vw,110px) 24px;background:#fffdfa}
+.login-top{display:flex;justify-content:flex-end;align-items:center;min-height:28px}
+.mobile-brand-logo{display:none}
+.secure{color:#8c8c84;font-size:8px;letter-spacing:1px}
+.login-card{width:min(100%,390px);margin:auto;padding:35px 0 31px;background:transparent;border:0;border-radius:0;box-shadow:none;color:#14283e}
+.login-heading{margin-bottom:28px}
+.login-heading .welcome-tag{color:#a87917;font-size:9px;letter-spacing:1.9px}
+.login-heading h2{color:#14283e;font-size:clamp(29px,3vw,36px);line-height:1.18;letter-spacing:-1.2px;margin:11px 0 9px}
+.login-heading p{color:#7f8790;font-size:12px;line-height:1.7}
+.login-card form>label,.password-label label{color:#273c50;font-size:11px}
+.password-label a{color:#9a701d;font-size:10px}
+.input-wrap{height:48px;margin-bottom:20px;border:1px solid #e6e7e6;background:#fff;border-radius:8px;box-shadow:none}
+.input-wrap:focus-within{border-color:#c39a3e;box-shadow:0 0 0 3px #c39a3e1c}
+.input-wrap>svg{stroke:#89929a}
+.input-wrap input{color:#14283e;font-size:12px}
+.input-wrap input::placeholder{color:#a4a9ad}
+.password-toggle{color:#838e98}
+.sign-in-button{height:48px;border-radius:8px;margin-top:4px;background:linear-gradient(110deg,#d9ad48,#c48b20);border:1px solid #c28e28;color:#132940;box-shadow:0 7px 16px #b9852425;font-size:12px;letter-spacing:.15px}
+.sign-in-button:hover{background:linear-gradient(110deg,#e4bb59,#cf9c36);box-shadow:0 9px 20px #b9852433}
+.sign-in-button svg{stroke:#132940}
+.form-error{color:#b34838;font-size:11px;margin-top:7px}
+.demo-hint{background:#f7f4ec;color:#77796f;border:1px solid #efeadc;border-radius:7px;font-size:9px;margin-top:16px;padding:11px}
+.hint-icon{border-color:#c4a052;color:#97721e}
+.login-footer{display:flex;justify-content:space-between;align-items:center;color:#9a9c98;font-size:9px}
+.login-footer a{color:#95701e}
+@media(max-width:800px){
+  .login-view{grid-template-columns:1fr;background:#fffdfa}
+  .login-view:before{inset:0 0 70% 0;background:radial-gradient(ellipse at 5% 88%,#c995331c,transparent 45%),linear-gradient(150deg,#fbfaf6,#f4f0e6)}
+  .login-view:after{width:100%;height:30%;background:linear-gradient(150deg,transparent 67%,#d7a94114 67.2%,transparent 67.7%)}
+  .login-art{min-height:0;height:190px;padding:20px 22px 16px;justify-content:center}
+  .login-art:before{width:360px;height:360px;right:-230px;top:-160px}
+  .login-art:after{width:250px;height:250px;right:-175px;top:-105px}
+  .brand-full-logo{width:160px}
+  .art-copy,.art-bottom{display:none}
+  .login-panel{min-height:calc(100svh - 190px);padding:4px 23px 18px}
+  .login-top{display:none}
+  .login-card{padding:24px 0;margin:auto}
+  .login-heading{margin-bottom:22px}
+  .login-footer{margin-top:auto}
+}
+@media(max-width:420px){.login-art{height:155px}.login-panel{min-height:calc(100svh - 155px);padding-left:21px;padding-right:21px}.brand-full-logo{width:138px}.login-card{padding-top:17px}.login-heading h2{font-size:29px}}

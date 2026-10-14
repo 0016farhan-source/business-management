@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151511">
+  <meta name="description" content="Probashi Store business management dashboard">
+  <title>Probashi Store — Business management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="gold-style.css">
+  <link rel="stylesheet" href="login-inspired.css">
+  <link rel="stylesheet" href="workspace-design.css">
+  <link rel="stylesheet" href="login-fullpage.css">
+  <link rel="stylesheet" href="login-polish.css">
+</head>
+<body>
+  <section id="login-view" class="login-view" aria-label="Sign in">
+    <div class="login-art">
+      <div class="art-glow"></div>
+      <a class="brand-full-logo" href="#" aria-label="Probashi Store"><img src="probashi-store-logo-transparent.png" alt="Probashi Store logo"></a>
+      <div class="art-copy"><span class="eyebrow"><i></i> YOUR BUSINESS, IN FOCUS</span><h1>Shop smart.<br><em>Run better.</em></h1><p>One calm, clear place to manage your orders, products and growth.</p></div>
+      <div class="art-bottom"><span>TRUSTED SELLER</span><span>·</span><span>PREMIUM QUALITY</span><span>·</span><span>FAST DELIVERY</span></div>
+      <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+    </div>
+    <div class="login-panel">
+      <div class="login-top"><img class="mobile-brand-logo" src="probashi-store-logo-transparent.png" alt="Probashi Store logo"><span class="secure"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5 4 5v4.7c0 3.6 2.5 6.5 6 7.8 3.5-1.3 6-4.2 6-7.8V5l-6-2.5Z"/><path d="m7.5 10 1.7 1.7 3.5-3.5"/></svg> SECURE ACCESS</span></div>
+      <div class="login-card"><div class="login-heading"><span class="welcome-tag">WELCOME BACK</span><h2>Sign in to your<br>workspace</h2><p>Enter your details to continue to your dashboard.</p></div>
+        <form id="login-form">
+          <label for="email">Email address</label><div class="input-wrap"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="2"/><path d="m3 5 7 5.5L17 5"/></svg><input id="email" type="email" placeholder="you@company.com" autocomplete="username" required value="admin@probashi.store"></div>
+          <div class="password-label"><label for="password">Password</label><a href="#" id="forgot-link">Forgot password?</a></div><div class="input-wrap"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="8" width="14" height="10" rx="2"/><path d="M6 8V5.8a4 4 0 0 1 8 0V8M10 12v2"/></svg><input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required value="probashi123"><button class="password-toggle" type="button" aria-label="Show password"><svg viewBox="0 0 20 20"><path d="M2 10s2.8-5 8-5 8 5 8 5-2.8 5-8 5-8-5-8-5Z"/><circle cx="10" cy="10" r="2"/></svg></button></div>
+          <div class="form-error" id="form-error" role="status"></div><button class="sign-in-button" type="submit">Sign in <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg></button>
+        </form><div class="demo-hint"><span class="hint-icon">i</span><span>Demo workspace · use the prefilled details to explore</span></div>
+      </div><div class="login-footer"><span>© 2026 FARHAN AHMED</span><a href="#" id="help-link">Need help?</a></div>
+    </div>
+  </section>
+
+  <div id="app-view" class="app-view hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand"><a class="brand" href="#dashboard"><span class="brand-mark"><img src="probashi-mark-transparent.png" alt=""></span><span>probashi<span class="brand-store">store</span></span></a><button class="sidebar-close" id="sidebar-close" aria-label="Close menu">×</button></div>
+      <div class="store-switch"><span class="store-avatar">P</span><span><b>Probashi Store</b><small>Online store</small></span><svg viewBox="0 0 20 20"><path d="m6 8 4 4 4-4"/></svg></div>
+      <span class="nav-caption">WORKSPACE</span><nav class="main-nav" id="main-nav">
+        <a class="nav-link active" href="#dashboard" data-page="dashboard"><svg viewBox="0 0 20 20"><rect x="2.5" y="2.5" width="6" height="6" rx="1.5"/><rect x="11.5" y="2.5" width="6" height="4" rx="1.5"/><rect x="11.5" y="8.5" width="6" height="9" rx="1.5"/><rect x="2.5" y="10.5" width="6" height="7" rx="1.5"/></svg>Overview</a>
+        <a class="nav-link" href="#orders" data-page="orders"><svg viewBox="0 0 20 20"><path d="M4 3.5h12v14l-2-1.4-2 1.4-2-1.4-2 1.4-2-1.4-2 1.4v-14Z"/><path d="M7 7h6m-6 3h6m-6 3h3"/></svg>Orders<span class="nav-count">8</span></a>
+        <a class="nav-link" href="#products" data-page="products"><svg viewBox="0 0 20 20"><path d="m10 2.5 7 4v7l-7 4-7-4v-7l7-4Z"/><path d="m3.5 6.7 6.5 3.8 6.5-3.8M10 10.5v7"/></svg>Products</a>
+        <a class="nav-link" href="#customers" data-page="customers"><svg viewBox="0 0 20 20"><circle cx="7.5" cy="6" r="3"/><path d="M2.5 16a5 5 0 0 1 10 0m2-7a3 3 0 0 0 0-6m1 8a4 4 0 0 1 2 4"/></svg>Customers</a>
+        <a class="nav-link" href="#expenses" data-page="expenses"><svg viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="12" rx="2"/><path d="M2.5 8h15m-10 4h3"/></svg>Expenses</a>
+        <span class="nav-caption nav-caption-lower">INSIGHTS</span>
+        <a class="nav-link" href="#reports" data-page="reports"><svg viewBox="0 0 20 20"><path d="M3 16.5v-5m5 5V7m5 9.5V3.5m5 13v-8"/></svg>Reports</a>
+        <a class="nav-link" href="#settings" data-page="settings"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/><path d="m16.2 11.8 1.1.9-1.5 2.6-1.4-.5a7 7 0 0 1-1.6.9l-.3 1.5h-3l-.3-1.5a7 7 0 0 1-1.6-.9l-1.4.5-1.5-2.6 1.1-.9a7 7 0 0 1 0-1.8l-1.1-.9 1.5-2.6 1.4.5a7 7 0 0 1 1.6-.9l.3-1.5h3l.3 1.5a7 7 0 0 1 1.6.9l1.4-.5 1.5 2.6-1.1.9a7 7 0 0 1 0 1.8Z" transform="translate(-1.2 -1) scale(.95)"/></svg>Settings</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="support-card"><span class="support-spark">✳</span><b>Need a hand?</b><p>Our support team is here for you.</p><button id="support-button">Contact support <span>↗</span></button></div><button class="profile-button" id="profile-button"><span class="profile-avatar">RA</span><span class="profile-meta"><b>Rahim Ahmed</b><small>Store owner</small></span><svg class="profile-dots" viewBox="0 0 20 20"><circle cx="4" cy="10" r="1"/><circle cx="10" cy="10" r="1"/><circle cx="16" cy="10" r="1"/></svg></button></div>
+    </aside>
+    <main class="main-area"><header class="topbar"><button class="mobile-menu" id="mobile-menu" aria-label="Open menu"><svg viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button><div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="breadcrumb-page">Overview</strong></div><div class="top-actions"><span class="demo-indicator">DEMO DATA</span><div class="today-label"><span class="status-dot"></span>Store is live</div><button class="icon-button notification-button" id="notification-button" aria-label="Notifications"><svg viewBox="0 0 20 20"><path d="M15.5 7.5a5.5 5.5 0 0 0-11 0c0 6-2 6-2 7h15c0-1-2-1-2-7Zm-7.5 9a2 2 0 0 0 4 0"/></svg><i></i></button><button class="top-avatar" id="top-avatar">RA</button></div></header>
+      <div class="page-content" id="page-content"></div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop hidden" id="modal-backdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-head"><h2 id="modal-title">Add details</h2><button type="button" id="modal-close" aria-label="Close">×</button></div><form id="record-form"><div id="modal-fields"></div><div class="modal-actions"><button type="button" class="button-secondary" id="modal-cancel">Cancel</button><button type="submit" class="button-primary">Save</button></div></form></section></div>
+  <script src="app.js"></script>
+</body>
+</html>

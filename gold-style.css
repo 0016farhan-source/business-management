@@ -1,0 +1,83 @@
+:root{--ink:#142b43;--paper:#f7f5ee;--gold:#bd8718;--gold-light:#fbf0d2}
+/* A warm gold welcome panel, balanced by the logo's deep navy. */
+.login-art{background:linear-gradient(145deg,#f8e5a9 0%,#f2ce6c 48%,#e9b744 100%);color:#142b43;border-right:1px solid #e7ca82}
+.login-art:before,.login-art:after{border-color:#74530e20}
+.art-glow{background:radial-gradient(circle,rgba(255,255,255,.55),transparent 68%)}
+.art-orbit{border-color:#84600c20}
+.art-copy h1{color:#10263c}
+.art-copy h1 em{color:#77520d}
+.art-copy p{color:#64501e}
+.eyebrow,.welcome-tag{color:#815b0e}
+.eyebrow i{background:#8e6512;box-shadow:0 0 10px #8e651266}
+.art-bottom{color:#745c28}
+.brand-full-logo{background:#fff;border-radius:7px;box-shadow:0 10px 28px #8b671c20}
+.login-panel{background:#fffdfa}
+.login-heading h2{color:#142b43}
+.secure{color:#756c56}
+.secure svg{stroke:#ac7913}
+.sign-in-button,.button-primary{background:linear-gradient(135deg,#e6b83f,#c58a18);border-color:#c58a18;color:#142b43;box-shadow:0 4px 12px #c58a1826}
+.sign-in-button:hover,.button-primary:hover{background:linear-gradient(135deg,#efc957,#d39a25);color:#10263c}
+.sign-in-button svg,.button-primary svg{stroke:#142b43}
+.input-wrap:focus-within,.modal-field input:focus{border-color:#bd8718;box-shadow:0 0 0 3px #bd87181c}
+.demo-hint{background:#fbf5e7;color:#756b56}
+.hint-icon{border-color:#ba8a24;color:#8a6212}
+
+/* Gold details on an ivory workspace with a navy navigation rail. */
+.main-area{background:#f7f5ee}
+.topbar{background:#fffdf8;border-bottom-color:#eee4cc}
+.sidebar{background:#10263c;border-right-color:#263b4d;color:#f8f4e8}
+.sidebar-brand .brand{color:#fff9e8}
+.sidebar-brand .brand-store{color:#e9bd55}
+.sidebar-brand .brand-mark{background:transparent;border-color:transparent}
+.store-switch{background:#19344e;border-color:#38506a}
+.store-switch b{color:#fff5dd}
+.store-switch small{color:#bdc3c6}
+.store-switch>svg{stroke:#e2c16a}
+.store-avatar{background:#e8bb4a;color:#10263c}
+.nav-caption{color:#c7a95f}
+.nav-link{color:#d2d6d8}
+.nav-link svg{stroke:#aeb9c1}
+.nav-link:hover{background:#1a3650;color:#fff4d5}
+.nav-link.active{background:linear-gradient(100deg,#e7bd53,#f1d780);color:#172c40;box-shadow:0 3px 12px #090f181a}
+.nav-link.active svg{stroke:#172c40}
+.nav-count{background:#fff0c8;color:#70500d}
+.support-card{background:#18334d;border-color:#344b5f}
+.support-card b{color:#fff5df}
+.support-card p{color:#c2c7c5}
+.support-card button{color:#efc75e}
+.support-spark{color:#f0c554}
+.profile-button{border-top-color:#34485a}
+.profile-meta b{color:#fff5df}
+.profile-meta small{color:#bdc4c8}
+.profile-avatar{background:#e6bc55;color:#183049}
+.profile-dots{fill:#c3cbd0}
+.metrics-grid .metric-card{border-color:#eee6d3;border-top:2px solid #d9ad43;box-shadow:0 4px 15px #293b4d08}
+.metric-top{color:#716b5d}
+.metric-icon{background:#fbf1d5;color:#94680f}
+.metric-value{color:#142b43}
+.panel{border-color:#eee8da;box-shadow:0 4px 16px #24384b08}
+.panel-heading h3,.table-title h3{color:#172d43}
+.sales-panel,.order-summary,.table-panel,.settings-panel{background:#fffefa}
+.chart-line{stroke:#bc8514}
+.chart-dot{stroke:#bc8514}
+.legend-dot{background:#bc8514}
+.donut{background:conic-gradient(#d4a22c 0 53%,#355b62 53% 78%,#d9d4c5 78% 90%,#eeeae0 90%)}
+.summary-total strong{color:#142b43}
+.summary-bottom{border-top-color:#eee8da}
+.data-table th{background:#fbf7ec;border-color:#efe7d4;color:#897b5b}
+.data-table td{border-bottom-color:#f0ece3}
+.order-id,.customer-cell b{color:#1b3045!important}
+.customer-avatar{background:#f6ecd1;color:#79580f}
+.text-link,.password-label a,.login-footer a{color:#9b6c0c}
+.button-secondary,.filter-select,.search-box{background:#fffefa;border-color:#e9e2d2;color:#5c5a52}
+.button-secondary:hover{background:#fbf3df;border-color:#e1c46f}
+.product-art{background:linear-gradient(135deg,#fbf1d8,#fffdf8)!important}
+.summary-card{background:#fffefa;border-color:#eee6d3}
+.summary-card strong{color:#142b43}
+.settings-row{border-color:#eee8da}
+.settings-row input,.settings-row select{border-color:#e5ddca;background:#fffefa}
+.toast{background:#142b43;border:1px solid #c99a2f;color:#fff7e3}
+.modal{background:#fffdfa;border:1px solid #e9dfc7}
+.modal-head h2{color:#142b43}
+.modal-field input{border-color:#e7dfcf;background:#fff}
+@media(max-width:800px){.sidebar{box-shadow:12px 0 35px #09152155}.login-art{border-right:0}}

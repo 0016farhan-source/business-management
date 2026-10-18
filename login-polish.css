@@ -9,7 +9,10 @@
 .input-wrap{background:linear-gradient(115deg,#fffefa,#fff);box-shadow:0 2px 6px #192c3c06}
 .sign-in-button{letter-spacing:.35px}
 .demo-hint{border-left:2px solid #c69a35}
-.brand-full-logo{filter:drop-shadow(0 8px 14px #a7791810)}
+.brand-full-logo{filter:none;box-shadow:none}
+.brand-full-logo,.mobile-brand-logo,.brand-mark{background:transparent!important}
+.language-button{position:relative;z-index:2;border:1px solid #e3d9c2;border-radius:18px;background:#fffdf8;color:#70551b;padding:7px 11px;font:700 10px var(--display);cursor:pointer;white-space:nowrap}
+[lang="bn"] body,[lang="bn"] button,[lang="bn"] input,[lang="bn"] select{font-family:"Noto Sans Bengali","DM Sans",sans-serif}
 @media(min-width:801px) and (max-width:1100px){
   .login-panel{padding-right:clamp(82px,10vw,112px)}
   .login-panel:before{right:calc(clamp(82px,10vw,112px) - 32px);width:420px;height:420px;top:calc(50% - 210px)}
@@ -19,8 +22,15 @@
   .art-copy h1{font-size:42px}
 }
 @media(max-width:800px){
-  .login-panel{padding:104px 18px 65px}
+  .login-panel{padding:24px 18px 28px;background:transparent}
   .login-panel:before{width:min(94vw,430px);height:min(94vw,430px);right:50%;transform:translateX(50%);top:calc(50% - 215px)}
   .login-panel:after{display:none}
+  .brand-full-logo{display:none}
+  .login-top{display:flex;justify-content:center;align-self:center;width:calc(100% + 36px);min-height:180px;margin:-24px -18px 14px;background:transparent}
+  .login-top .login-language{position:absolute;top:8px;right:12px}
+  .mobile-brand-logo{display:block;width:min(68vw,260px);max-height:168px;object-fit:contain}
+  .secure{display:none}
+  .login-card{margin:auto 0}
 }
-@media(max-width:420px){.login-panel{padding-left:15px;padding-right:15px}}
+@media(max-width:420px){.login-panel{padding-left:15px;padding-right:15px}.login-top{width:calc(100% + 30px);margin-right:-15px;margin-left:-15px}}
+@media(max-width:560px){.top-actions .demo-indicator,.top-actions .today-label{display:none}.top-actions{gap:8px}.top-actions .language-button{padding:6px 9px}}

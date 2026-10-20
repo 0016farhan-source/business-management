@@ -123,7 +123,7 @@
     'Customer information':'কাস্টমারের তথ্য','Edit profile':'তথ্য সম্পাদনা','ACTION':'কাজ','ACTIONS':'কাজ','EDIT':'সম্পাদনা','View ledger':'খাতা দেখুন',
     'Overdue since':'বাকি হওয়ার পর','Customer profile':'কাস্টমারের তথ্য','Name':'নাম','Phone':'ফোন','Save profile':'তথ্য সংরক্ষণ',
     'Archive customer':'কাস্টমার আর্কাইভ','Cannot archive while due remains':'বাকি থাকলে আর্কাইভ করা যাবে না',
-    'Record payment':'বাকি শোধের এন্ট্রি','Each receipt is saved as a separate dated ledger entry.':'প্রতিটি টাকা আদায় তারিখসহ আলাদা এন্ট্রি হবে।',
+    'Archive':'Архাইভ','Restore':'ফেরত আনুন','Archived':'আর্কাইভ করা','Archived products':'আর্কাইভ করা পণ্য','Active products · any stock':'সক্রিয় পণ্য · সব স্টক','Delete':'মুছুন','Product archived and hidden from POS.':'পণ্য আর্কাইভ করা হয়েছে, POS-এ দেখাবে না।','Product restored to POS.':'পণ্য POS-এ ফিরিয়ে আনা হয়েছে।','Expense deleted and account balance adjusted.':'খরচ মুছে হিসাবের ব্যালেন্স সমন্বয় করা হয়েছে।','Expense saved successfully.':'খরচ সংরক্ষণ করা হয়েছে।','Expense updated successfully.':'খরচ হালনাগাদ করা হয়েছে।','Product added successfully.':'পণ্য যোগ করা হয়েছে।','Product updated successfully.':'পণ্য হালনাগাদ করা হয়েছে।',    'Record payment':'বাকি শোধের এন্ট্রি','Each receipt is saved as a separate dated ledger entry.':'প্রতিটি টাকা আদায় তারিখসহ আলাদা এন্ট্রি হবে।',
     'Account':'হিসাব','Receipt or reference':'রসিদ বা রেফারেন্স','Ledger history':'লেনদেনের ইতিহাস','Running balance':'ক্রমাগত বাকি',
     'DATE':'তারিখ','DESCRIPTION':'বিবরণ','DUE':'বাকি','PAYMENT':'জমা','ADJUSTMENT':'সংশোধন','BALANCE':'স্থিতি',
     'Sale due':'বিক্রির বাকি','Payment received':'টাকা জমা','Correction':'সংশোধনী','Correct':'সংশোধন',

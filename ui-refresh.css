@@ -356,3 +356,15 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* Product archive and expense removal actions */
+.product-card-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 13px; }
+.product-card-actions .product-edit-link { width: auto; flex: 1; margin-top: 0; }
+.product-archive-link { min-height: 30px; padding: 0 9px; border: 1px solid #e8e5dc; border-radius: 7px; background: #fff; color: #687581; font: 600 10px var(--display); cursor: pointer; }
+.product-archive-link:hover { border-color: #d9c99f; background: #fbf8ef; color: #755a20; }
+.product-card.is-archived { opacity: .78; }
+.archived-badge { display: inline-flex; margin: 8px 0 0 6px; padding: 3px 7px; border-radius: 20px; background: #f0efeb; color: #77766e; font-size: 9px; font-weight: 700; }
+.expense-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; white-space: nowrap; }
+.danger-action { color: #9b514b; }
+.danger-action:hover { color: #85342e; }
+@media(max-width:560px) { .product-card-actions { flex-wrap: wrap; } .expense-actions { gap: 8px; } }

@@ -1,1 +1,93 @@
 .feature-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}.modal-field{display:flex;flex-direction:column;gap:7px;color:#77766e;font-size:10px;font-weight:600}.modal-field input,.modal-field select{height:38px;border:1px solid #e8e7e0;border-radius:7px;padding:0 10px;background:#fff;color:#45443d;font:400 11px 'DM Sans',sans-serif;min-width:0}.modal-field input:focus,.modal-field select:focus{outline:2px solid #c8a45155;border-color:#c8a451}.feature-actions{display:flex;gap:9px;align-items:center;grid-column:1/-1;margin-top:5px}.feature-note{font-size:10px;color:#77766e;padding-top:16px}.feature-table{margin-top:16px}.feature-subheading{font:700 13px 'Manrope',sans-serif;margin:22px 0 10px}.print-target{display:none}@media print{@page{size:auto;margin:14mm}body>*{display:none!important}.print-target{display:block!important;position:static;width:100%;background:#fff;color:#172334;font:12px/1.5 Arial,sans-serif}.receipt{width:min(100%,620px);margin:0 auto;padding:26px 32px;border:0;border-top:4px solid #bd8618;border-radius:0}.receipt-header{display:flex;align-items:end;justify-content:space-between;gap:20px;text-align:left;padding-bottom:16px;border-bottom:2px solid #172334}.receipt-header h1{margin:0;color:#172334;font-size:23px;letter-spacing:.2px}.receipt-header p{margin:5px 0 0;color:#9a701d;font-size:10px;font-weight:800;letter-spacing:2px}.receipt-meta{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid #e5e8ec;color:#667386;font-size:11px}.receipt-meta span{display:grid;gap:3px}.receipt-meta small{color:#758195;font-size:9px;font-weight:700;letter-spacing:1px}.receipt-meta b{color:#172334;font-size:12px}.receipt-memo{min-width:150px;padding:8px 12px;border-left:3px solid #bd8618;background:#faf6eb}.receipt-meta .receipt-memo b{color:#76540b;font-size:22px;line-height:1.15;letter-spacing:.5px}.receipt-date{justify-items:end}.receipt-customer{display:grid;gap:3px;margin:12px 0;padding:11px 13px;border-left:2px solid #c8d0d8;background:#f6f7f8}.receipt-customer small{color:#738092;font-size:10px}.receipt-customer strong{color:#172334;font-size:13px}.receipt-items{width:100%;border-collapse:collapse;margin:8px 0 14px}.receipt-items th{padding:8px 5px;border-bottom:1px solid #cfd5dc;color:#59697a;font-size:9px;text-align:left;text-transform:uppercase;letter-spacing:.5px}.receipt-items td{padding:10px 5px;border-bottom:1px solid #edf0f2;color:#253649;font-size:11px}.receipt-items th:not(:first-child),.receipt-items td:not(:first-child){text-align:right}.receipt-totals{width:min(100%,280px);margin-left:auto;display:grid;gap:7px}.receipt-totals div{display:flex;justify-content:space-between;gap:16px;color:#647285;font-size:11px}.receipt-totals b{color:#172334;font-variant-numeric:tabular-nums}.receipt-totals .receipt-total{padding:9px 0;border-top:1px solid #bfc8d1;border-bottom:1px solid #bfc8d1;background:transparent;color:#172334;font-size:13px;font-weight:700}.receipt-total b{font-size:14px}.receipt-totals .receipt-paid{padding:3px 0;border:0;background:transparent;color:#647285;font-size:11px;font-weight:500}.receipt-totals .receipt-paid b{color:#263d31;font-size:12px}.receipt-totals .receipt-due{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:8px;padding:10px 12px;border:0;border-left:3px solid #c19019;border-radius:0;background:#fff6df;color:#62480b}.receipt-due span{color:#76570f;font-size:11px;font-weight:800;letter-spacing:.2px}.receipt-totals .receipt-due strong{color:#62480b;font-size:19px;font-variant-numeric:tabular-nums}.receipt-due.has-due{border-left-color:#a73935;background:#fff0ee;color:#8f2e2a}.receipt-totals .receipt-due.has-due strong{color:#8f2e2a}.receipt-signatures{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:35px}.receipt-signatures span{padding-top:7px;border-top:1px solid #76828b;color:#536170;text-align:center;font-size:10px}.receipt footer{margin-top:24px;padding-top:14px;border-top:1px dashed #ccd3da;color:#667386;text-align:center;font-size:10px}}@media(max-width:560px){.feature-form-grid{grid-template-columns:1fr}.feature-actions{flex-wrap:wrap}.feature-actions>*{flex:1;justify-content:center}}
+
+/* POS receipt redesign */
+@media print {
+  @page { size: A4 portrait; margin: 13mm; }
+  .print-target { display: block !important; position: static; width: 100%; background: #fff; color: #263442; font: 12px/1.5 "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .receipt { width: 100%; max-width: 720px; margin: 0 auto; padding: 0; border: 0; color: #263442; }
+  .receipt-header { display: flex; align-items: center; gap: 13px; padding: 5px 0 17px; border: 0; text-align: left; }
+  .receipt-brand-mark { display: grid; width: 48px; height: 48px; flex: none; place-items: center; border-radius: 14px; background: #f4ead2; color: #936910; font: 800 24px Arial, sans-serif; }
+  .receipt-brand { flex: 1; min-width: 0; }
+  .receipt-brand h1 { margin: 0; color: #183047; font-size: 21px; line-height: 1.3; }
+  .receipt-brand p { margin: 3px 0 0; color: #78828a; font-size: 10px; }
+  .receipt-title { display: grid; gap: 4px; text-align: right; }
+  .receipt-title span { color: #9a741e; font: 700 9px Arial, sans-serif; letter-spacing: 1.5px; }
+  .receipt-title strong { color: #183047; font-size: 15px; }
+  .receipt-rule { height: 3px; border-radius: 2px; background: linear-gradient(90deg,#b98a2c 0 28%,#e9dfc7 28% 100%); }
+  .receipt-meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 17px 0 14px; padding: 13px 15px; border: 1px solid #e9edf0; border-radius: 10px; background: #fafbfc; }
+  .receipt-meta > div { display: grid; gap: 4px; }
+  .receipt-meta small, .receipt-customer small { color: #89939b; font-size: 9px; }
+  .receipt-meta b { color: #253a4e; font-size: 11px; }
+  .receipt-status { width: fit-content; padding: 2px 8px; border-radius: 20px; background: #e8f4ec; color: #34764e !important; }
+  .receipt-status.is-due { background: #fff1dc; color: #9b6810 !important; }
+  .receipt-customer { display: flex; align-items: center; justify-content: space-between; margin: 0 0 17px; padding: 13px 15px; border: 1px solid #e9edf0; border-radius: 10px; background: #fff; }
+  .receipt-customer > div { display: grid; gap: 3px; }
+  .receipt-customer strong { color: #1b3349; font-size: 13px; }
+  .receipt-customer span:not(.receipt-customer-icon) { color: #77838d; font-size: 10px; }
+  .receipt-customer-icon { display: grid; width: 31px; height: 31px; place-items: center; border-radius: 50%; background: #f3f5f6; color: #ac8435; font-size: 11px; }
+  .receipt-items { width: 100%; margin: 0; border-collapse: collapse; }
+  .receipt-items thead { display: table-header-group; }
+  .receipt-items th { padding: 10px 9px; border-bottom: 1px solid #dce2e6; background: #f4f6f7; color: #62717e; font-size: 9px; font-weight: 700; text-align: left; }
+  .receipt-items th:first-child { border-radius: 7px 0 0 0; }
+  .receipt-items th:last-child { border-radius: 0 7px 0 0; }
+  .receipt-items td { padding: 11px 9px; border-bottom: 1px solid #edf0f2; color: #354656; font-size: 10px; }
+  .receipt-items th:not(:nth-child(2)), .receipt-items td:not(:nth-child(2)) { text-align: right; }
+  .receipt-items td:nth-child(2) { color: #20364b; font-weight: 700; }
+  .receipt-items tr { break-inside: avoid; }
+  .receipt-bottom { display: grid; grid-template-columns: 1fr minmax(235px, 285px); align-items: start; gap: 30px; margin-top: 18px; }
+  .receipt-thanks { display: grid; justify-items: start; gap: 5px; padding: 14px 0; }
+  .receipt-thanks-icon { display: grid; width: 29px; height: 29px; margin-bottom: 3px; place-items: center; border-radius: 50%; background: #e8f4ec; color: #34764e; font: 700 15px Arial, sans-serif; }
+  .receipt-thanks strong { color: #2a5940; font-size: 11px; }
+  .receipt-thanks small { color: #87918d; font-size: 10px; }
+  .receipt-totals { display: grid; gap: 0; width: 100%; margin: 0; }
+  .receipt-totals > div { display: flex; justify-content: space-between; gap: 14px; padding: 6px 0; color: #77838d; font-size: 10px; }
+  .receipt-totals b { color: #34495a; font-size: 10px; font-variant-numeric: tabular-nums; }
+  .receipt-totals .receipt-total { margin: 5px 0; padding: 10px 11px; border: 0; border-radius: 7px; background: #f4ead2; color: #745719; font-size: 11px; }
+  .receipt-totals .receipt-total b { color: #684b0d; font-size: 13px; }
+  .receipt-totals .receipt-due { margin-top: 5px; padding: 9px 11px; border: 1px solid #e7eee9; border-radius: 7px; background: #f5faf6; color: #4f735e; }
+  .receipt-totals .receipt-due strong { color: #34764e; font-size: 14px; font-variant-numeric: tabular-nums; }
+  .receipt-totals .receipt-due.has-due { border-color: #f1e1c5; background: #fff8ec; color: #8c651c; }
+  .receipt-totals .receipt-due.has-due strong { color: #9b6810; }
+  .receipt-footer { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; margin-top: 42px; }
+  .receipt-footer span { padding-top: 8px; border-top: 1px solid #aeb8bf; color: #78838b; text-align: center; font-size: 9px; }
+  .receipt-footer-note { margin-top: 23px; padding-top: 11px; border-top: 1px solid #edf0f2; color: #9aa3aa; text-align: center; font-size: 9px; }
+}
+
+/* Softer receipt totals and a single right-aligned summary column */
+@media print {
+  .receipt-bottom { grid-template-columns: 1fr; gap: 0; }
+  .receipt-totals { max-width: 305px; margin-left: auto; }
+  .receipt-totals .receipt-total { border: 1px solid #eee9dc; background: #fbfaf7; color: #74694f; }
+  .receipt-totals .receipt-total b { color: #756747; }
+  .receipt-totals .receipt-paid { margin-top: 3px; padding: 8px 11px; border: 1px solid #edf0ee; border-radius: 7px; background: #fafbfa; color: #77817b; }
+  .receipt-totals .receipt-paid b { color: #64736a; }
+  .receipt-totals .receipt-due { border-color: #eee9dc; background: #fbfaf7; color: #7b715b; }
+  .receipt-totals .receipt-due strong { color: #786a49; }
+  .receipt-totals .receipt-due.has-due { border-color: #f0e9dc; background: #fcfaf6; color: #80765f; }
+  .receipt-totals .receipt-due.has-due strong { color: #806b42; }
+}
+@media print {
+  .receipt-footer span { border-top: 0; }
+}
+@media print {
+  .receipt-footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: end;
+    column-gap: 48px;
+    margin: 34px 0 0;
+    padding: 0 8px;
+  }
+  .receipt-footer span {
+    display: flex;
+    min-width: 0;
+    min-height: 58px;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 4px 2px;
+    border: 0;
+    color: #78838b;
+    text-align: center;
+    line-height: 1.4;
+  }
+}

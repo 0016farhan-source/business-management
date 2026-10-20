@@ -362,6 +362,18 @@
     }
   },true);
   document.addEventListener('submit', event => {
+    if (event.target.id==='record-form' && modalMode==='order-edit') {
+      event.preventDefault();event.stopImmediatePropagation();
+      const sale=orders[modalRecordIndex];if(!sale)return;
+      const data=new FormData(event.target),name=String(data.get('customer')||'').trim(),email=String(data.get('email')||'').trim()||`${name.toLowerCase().replace(/[^a-z0-9]+/g,'.')}@walkin.local`,total=Number(data.get('total')),items=Math.max(1,Math.floor(Number(data.get('items'))||1));
+      if(!name||!Number.isFinite(total)||total<=0){notify('Enter a customer name and a valid order total.');return;}
+      const oldKey=saleCustomerKey(sale),newKey=saleCustomerKey({name,email}),paid=Math.min(Math.max(0,Number(sale.paidAmount)||0),total),oldDue=sale.status==='Cancelled'?0:Math.max(0,Number(sale.total||0)-Math.min(Math.max(0,Number(sale.paidAmount)||0),Number(sale.total||0))),newDue=sale.status==='Cancelled'?0:Math.max(0,total-paid),sameCustomer=oldKey===newKey;
+      if(!sameCustomer&&oldDue>0&&!pushEntry({cid:oldKey,customerName:sale.name,type:'adjustment',amount:-oldDue,note:'Order customer changed · previous due cleared',date:todayISO()})){notify('Could not update the previous customer balance.');return;}
+      if((sameCustomer&&newDue!==oldDue||!sameCustomer&&newDue>0)&&!pushEntry({cid:newKey,customerName:name,type:sameCustomer?'adjustment':'due',amount:sameCustomer?newDue-oldDue:newDue,note:'Edited order balance',date:todayISO(),saleId:sale.id})){notify('Could not update the customer balance.');return;}
+      sale.name=name;sale.email=email;sale.initials=initial(name);sale.items=items;sale.total=total;sale.paidAmount=paid;
+      try{localStorage.setItem('probashi-orders',JSON.stringify(orders));}catch{notify('Could not save the edited order. Browser storage may be full or unavailable.');return;}
+      closeModal();renderPage('orders');notify('Order updated successfully.');return;
+    }
     if (event.target.id==='record-form' && modalMode==='order') {
       event.preventDefault();event.stopImmediatePropagation();
       const data=new FormData(event.target),name=String(data.get('customer')||'').trim(),providedEmail=String(data.get('email')||'').trim(),email=providedEmail||`${name.toLowerCase().replace(/[^a-z0-9]+/g,'.')}@walkin.local`,key=saleCustomerKey({name,email}),amount=Number(data.get('total')),items=Math.max(1,Math.floor(Number(data.get('items'))||1));

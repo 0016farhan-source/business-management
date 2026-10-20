@@ -161,6 +161,23 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pos-workspace .feature-form-grid { gap: 17px 16px; }
 .pos-workspace .modal-field { color: #536170; font-size: 11px; }
 .pos-workspace .modal-field input, .pos-workspace .modal-field select { height: 42px; border-radius: 9px; font-size: 12px; }
+.pos-live-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; margin-top: 19px; padding: 5px 15px; border: 1px solid #e9e2d1; border-radius: 12px; background: #fffdf8; }
+.pos-live-summary > div { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 40px; border-bottom: 1px solid #f0ece3; color: #687581; font-size: 10px; }
+.pos-live-summary > div b { color: #1d344a; font-size: 11px; font-variant-numeric: tabular-nums; }
+.pos-live-summary .pos-summary-total, .pos-live-summary .pos-summary-due { color: #80590f; font-weight: 700; }
+.pos-live-summary .pos-summary-total b, .pos-live-summary .pos-summary-due b { color: #80590f; font-size: 13px; }
+.pos-live-summary .pos-summary-due { border-bottom: 0; }
+.pos-save-confirmation { display: grid; gap: 14px; padding: 17px; border: 1px solid #dce9df; border-radius: 12px; background: linear-gradient(145deg, #f7fbf6, #fffefa 72%); box-shadow: 0 5px 15px rgba(33, 74, 51, .06); }
+.pos-save-heading { display: flex; align-items: center; gap: 10px; }
+.pos-save-check { display: grid; width: 30px; height: 30px; flex: none; place-items: center; border-radius: 50%; background: #e5f2e8; color: #3b8058; font-size: 15px; font-weight: 800; }
+.pos-save-heading strong, .pos-save-heading small { display: block; }
+.pos-save-heading strong { color: #173c2c; font: 700 13px var(--display); }
+.pos-save-heading small { margin-top: 3px; color: #718078; font-size: 10px; }
+.pos-save-customer { margin: -3px 0 0 40px; color: #69766e; font-size: 11px; }
+.pos-save-customer b { color: #263d31; font-weight: 700; }
+.pos-print-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 15px; border: 1px solid #10263c; border-radius: 8px; background: #10263c; color: #fff; font: 700 11px var(--display); cursor: pointer; transition: background .16s, transform .16s, box-shadow .16s; }
+.pos-print-button span { color: #f2c04b; font-size: 17px; line-height: 1; }
+.pos-print-button:hover { transform: translateY(-1px); background: #1b3652; box-shadow: 0 5px 12px rgba(16, 38, 60, .18); }
 .pos-workspace .feature-actions { margin-top: 23px; }
 .pos-guide { padding: 19px; border: 1px solid #e9e2d1; border-radius: 13px; background: linear-gradient(160deg, #fcf8ec, #fffefa 72%); }
 .pos-guide-icon { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 10px; background: #eaf3ed; color: #4b8667; font-size: 16px; font-weight: 700; }
@@ -228,6 +245,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .customer-name-label { color: #183047; font: 700 11px var(--display); }
 .customer-edit-button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 13px; border: 1px solid #ead8ad; border-radius: 10px; background: linear-gradient(180deg, #fffaf0, #fff4dc); color: #80590f; font: 700 11px var(--display); white-space: nowrap; box-shadow: 0 3px 9px rgba(129, 92, 20, .08); transition: background .16s, border-color .16s, box-shadow .16s, transform .16s; }
 .customer-edit-button:hover { transform: translateY(-1px); border-color: #d3aa55; background: #ffefc9; box-shadow: 0 5px 13px rgba(129, 92, 20, .14); }
+.order-edit-button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 32px; padding: 0 10px; border: 1px solid #ead8ad; border-radius: 8px; background: linear-gradient(180deg, #fffaf0, #fff4dc); color: #80590f; font: 700 10px var(--display); white-space: nowrap; box-shadow: 0 2px 7px rgba(129, 92, 20, .07); transition: background .16s, border-color .16s, box-shadow .16s, transform .16s; }
+.order-edit-button svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.order-edit-button:hover { transform: translateY(-1px); border-color: #d3aa55; background: #ffefc9; box-shadow: 0 4px 10px rgba(129, 92, 20, .12); }
 .customer-edit-button:focus-visible { outline: 3px solid rgba(189, 134, 24, .27); outline-offset: 2px; }
 .customer-edit-button svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .customer-inline-form { padding: 19px; min-width: 0; }
